@@ -3,6 +3,7 @@
 This log tracks all architectural decisions, challenges encountered, solutions, and lessons learned chronologically.
 
 **Phase 0** - _Research and Planning_
+
 Before any code was written, the initial phase was dedicated to gaining a high-level conceptual understanding of the operating system structure and identifying the necessary technical tools. This ensured the project had a clear path forward.
 
 1. Conceptual Overview (The "What" and "Why")
