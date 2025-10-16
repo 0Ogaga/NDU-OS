@@ -24,4 +24,4 @@ Based on the goal of building a bare-metal kernel, the following required materi
 4. Assembly language extensions in VS Code: For writing of assembly programs
 5. QEMU: It is a simulator which acts like another machine (computer) inside your (our) machine (computer).
 6. Ubuntu: This acts as another operating system inside your computer. You have to enable Windows Subsystem for Linux if you are using windows. NOTE THAT FOR THIS PROJECT, I AM WORKING WITH A WINDOWS LAPTOP.
-7. MingW64: As a cross compiler since we will need to run 32-bit, 16-bit code in our computer which is 64-bit
+7. MingW64: MinGW-w64 creates a raw, self-sufficient program that can run by itself on the empty computer hardware.
