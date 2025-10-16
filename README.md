@@ -2,7 +2,7 @@
 
 This project is a complete log of my industrial training, detailing the process of building an Operating System kernel from the ground up. It involves learning how a computer starts, how it manages memory, and how to write core code that runs before any major system like Windows or Linux has loaded. Essentially, we are making (writing, programming) the fundamental software that manages the hardware according to instructions which we'll write in our program.
 
-**_Project Goal_**
+**_Project Goal:_**
 Building a minimal Operating System kernel from scratch as part of my Industrial Training.
 
 **_Achievement Details:_**
