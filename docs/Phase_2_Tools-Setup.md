@@ -42,6 +42,7 @@ It is essential to update all software packages immediately after installation t
 a. Open the Ubuntu terminal (if it's not already open).
 
 b. Run the update and upgrade commands one after the other. Press enter after each command:
+
         sudo apt-get update && sudo apt-get install nasm build-essential
 
 Note that the above command updates the wsl and also intall the what is required for nasm to work.
