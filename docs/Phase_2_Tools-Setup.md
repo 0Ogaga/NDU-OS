@@ -80,6 +80,22 @@ b. Click and follow the process to complete the installation.
 
 c. After installation, open VS Code, go to the extension (ensure you are connected to the internet), type and install the following;
 
-i. C/C++ and download the extentions bearing Microsoft.
+i. C/C++ (the one bearing Microsoft).
 
-ii. 
+ii. C/C++ Build Task.
+
+iii. C/C++ Compile Run.
+
+iv. C/C++ Extension Pack.
+
+v. C/C++ Runner.
+
+vi. Code Runner.
+
+vii. Hex Editor (the one bearing Microsoft).
+
+viii. Makefile Tools (the one bearing Microsoft).
+
+ix. NASM X86 Assembly Language.
+
+x. Nasm x86_64 syntax highlighting.
