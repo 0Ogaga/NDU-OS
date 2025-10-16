@@ -8,8 +8,6 @@ Since professional OS development relies heavily on Unix-like tools, we use WSL 
 
 WSL allows us to run the high-performance Linux environment without dual-booting or restarting, ensuring a smooth workflow on the host machine.
 
-Step 1: Enable WSL feature on your windows system (laptop)
----
 a. Press Windows key + R
 
 b. Type in 'optionalfeatures.exe' and press enter.
@@ -20,7 +18,7 @@ d. The click 'ok'
 
 e. You will be asked to restart your system (laptop) after the loading process is complete. Go ahead and restart you system.
 
-Step 2: Install WSL Distribution (Ubuntu).
+**2. Install WSL Distribution (Ubuntu).**
 ---
 
 a. Go to Microsoft Store and search for 'Ubuntu', then click on 'Ubuntu' when it appears. I selected the one without any number in front of it. It's just 'Ubuntu'.
@@ -37,7 +35,7 @@ f. You will be asked to enter the password again. Ensure you type exactly the sa
 
 g. Allow the loading process to continue and ensure you are connected to the internet all through the process.
 
-Step 4: Update the System
+**3. Update the System**
 ---
 It is essential to update all software packages immediately after installation to prevent compatibility issues.
 
@@ -48,16 +46,16 @@ b. Run the update and upgrade commands one after the other. Press enter after ea
     
 c. Enter your password (the password you created) when you are prompted to.
 
-**2. Setting NASM (Netwide Assembler). THIS IS OPTIONAL**
-----------
+**4. Setting NASM (Netwide Assembler). THIS IS OPTIONAL**
+---
 This is the tool that converts our instructions using mnemonics into machine language.
 
 a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site. 
 
 b. Simply click on it and complete the installation process.
 
-**3. Setting QEMU**
-----------
+**5. Setting QEMU**
+---
 QEMU is a System Emulator. It simulates the physical x86 computer hardware (the CPU, BIOS, and hard drive) entirely in software. This allows us to test our OS kernel as if it were running on a real machine, without the risk of damaging our host system.
 
 a. Go to the website https://qemu.weilnetz.de/w64/2025/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site.
