@@ -69,3 +69,17 @@ This is the tool that converts our instructions using mnemonics into machine lan
 a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site. 
 
 b. Simply click on it and complete the installation process.
+
+**6. Visual Sudio Code (VS Code)**
+---
+VS Code is our primary code editor and project manager. It provides a user-friendly interface with features like syntax highlighting, file navigation, and project search, making large-scale code management much easier than using a basic terminal editor.
+
+a. Go to the official VS Code website (https://code.visualstudio.com/) and download the installer for Windows.
+
+b. Click and follow the process to complete the installation.
+
+c. After installation, open VS Code, go to the extension (ensure you are connected to the internet), type and install the following;
+
+i. C/C++ and download the extentions bearing Microsoft.
+
+ii. 
