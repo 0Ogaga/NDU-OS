@@ -1,8 +1,4 @@
-#  FULL DEVELOPMENT LOG: NDU-OS JOURNEY
-
-This log tracks all architectural decisions, challenges encountered, solutions, and lessons learned chronologically.
-
-**PHASE 1** **- _RESEARCH AND PLANNING_**
+**PHASE 1** **- _OVERVIEW_**
 
 Before any code was written, the initial phase was dedicated to gaining a high-level conceptual understanding of the operating system structure and identifying the necessary technical tools. This ensured the project had a clear path forward.
 
