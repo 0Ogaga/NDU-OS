@@ -8,7 +8,7 @@ This document serves as the master index for all project phases, documenting dec
 
 | Phase | Status | Technical Focus | Log File Link |
 | :--- | :--- | :--- | :--- |
-| **Phase 1** | Complete | Overview | **[View Log](Phase-1-overview.md)** |
+| **Phase 1** | Complete | Overview (Reserch of key concepts & tools) | **[View Log](Phase-1-overview.md)** |
 
 
 ---
