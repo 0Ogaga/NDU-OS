@@ -1,5 +1,5 @@
 **Phase 1: CONFIGURATION OF TOOLS**
-|---
+--------------------
 This phase details the necessary steps taken to configure the development environment.
 
 **1. Setting Up the Linux Environment (WSL)**
@@ -18,12 +18,18 @@ e. You will be asked to restart your system (laptop) after the loading process i
 
 Step 2: Install WSL Distribution (Ubuntu).
 ---
+
 a. Go to Microsoft Store and search for 'Ubuntu', then click on 'Ubuntu' when it appears. I selected the one without any number in front of it. It's just 'Ubuntu'.
 b. Click on it to install.
+
 c. After installation, Ubuntu window will automatically open and prompt you to create a user account. Ensure you have ENOUGH data before you start the installation process. ENOUGH data oooooo. About..................
+
 d. Enter Username: Choose a simple username (e.g., osdev).
+
 e. Enter Password: Create a password. This password will be needed anytime you use the sudo command (for administrative privileges). Note that when you type the password, there may be no sign or proof that you are typing anything. Just keep typing. Believe that what you are typing is recognized by the system. Press enter when you are done.
+
 f. You will be asked to enter the password again. Ensure you type exactly the same thing even if you can't see your coursor moving. Press enter when you are done.
+
 g. Allow the loading process to continue and ensure you are connected to the internet all through the process.
 
 Step 4: Update the System
@@ -38,7 +44,7 @@ b. Run the update and upgrade commands one after the other. Press enter after ea
 c. Enter your password (the password you created) when you are prompted to.
 
 **2. Setting NASM (Netwide Assembler). THIS IS OPTIONAL**
-|---
+----------
 This is the tool that converts our instructions using mnemonics into machine language.
 
 a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site. 
@@ -46,7 +52,7 @@ a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and dow
 b. Simply click on it and complete the installation process.
 
 **3. Setting QEMU**
-|---
+----------
 QEMU is a System Emulator. It simulates the physical x86 computer hardware (the CPU, BIOS, and hard drive) entirely in software. This allows us to test our OS kernel as if it were running on a real machine, without the risk of damaging our host system.
 
 a. Go to the website https://qemu.weilnetz.de/w64/2025/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site.
