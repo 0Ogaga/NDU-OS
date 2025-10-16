@@ -48,22 +48,23 @@ b. Run the update and upgrade commands one after the other. Press enter after ea
 
     sudo apt install qemu-system-x86
 
-    The command above installs what is required for QEMU to work properly. If this does not install properly, you can try the other option of installing qemu in your windows system instead of in the Linux environment. Then, add the path in which the QEMU is installed in the Makefile in order to run it. Click [here](Challenges_and_how_they_where_resolved.md) for more details on this and how order challenges where resolved.
+The command above installs what is required for QEMU to work properly. If this does not install properly, you can try the other option of installing qemu in your windows system instead of in the Linux environment. Then, add the path in which the QEMU is installed in the Makefile in order to run it. Click [here](Challenges_and_how_they_where_resolved.md) for more details on this and how order challenges where resolved.
     
 c. Enter your password (the password you created) when you are prompted to.
 
-**4. Setting NASM (Netwide Assembler). THIS IS OPTIONAL**
----
-This is the tool that converts our instructions using mnemonics into machine language.
-
-a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site. 
-
-b. Simply click on it and complete the installation process.
-
-**5. Setting QEMU**
+**4. Setting QEMU**
 ---
 QEMU is a System Emulator. It simulates the physical x86 computer hardware (the CPU, BIOS, and hard drive) entirely in software. This allows us to test our OS kernel as if it were running on a real machine, without the risk of damaging our host system.
 
 a. Go to the website https://qemu.weilnetz.de/w64/2025/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site.
+
+b. Simply click on it and complete the installation process.
+
+
+**5. Setting NASM (Netwide Assembler). THIS IS OPTIONAL**
+---
+This is the tool that converts our instructions using mnemonics into machine language.
+
+a. Go to the website https://www.nasm.us/pub/nasm/releasebuilds/3.01rc9/ and download it. Note that my system runs on 64-bit architecture. If your runs on 32-bit, then download the one of 32-bit from the same site. 
 
 b. Simply click on it and complete the installation process.
