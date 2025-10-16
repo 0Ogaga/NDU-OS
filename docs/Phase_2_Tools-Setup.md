@@ -43,6 +43,12 @@ a. Open the Ubuntu terminal (if it's not already open).
 
 b. Run the update and upgrade commands one after the other. Press enter after each command:
     sudo apt-get update && sudo apt-get install nasm build-essential
+
+    Note that the above command updates the wsl and also intall the what is required for nasm to work.
+
+    sudo apt install qemu-system-x86
+
+    The command above installs what is required for QEMU to work properly. If this does not install properly, you can try the other option of installing qemu in your windows system instead of in the Linux environment. Then, add the path in which the QEMU is installed in the Makefile in order to run it. Click [here](Challenges_and_how_they_where_resolved.md) for more details on this and how order challenges where resolved.
     
 c. Enter your password (the password you created) when you are prompted to.
 
