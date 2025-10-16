@@ -11,15 +11,20 @@ WSL allows us to run the high-performance Linux environment without dual-booting
 Step 1: Enable WSL feature on your windows system (laptop)
 ---
 a. Press Windows key + R
+
 b. Type in 'optionalfeatures.exe' and press enter.
+
 c. Scroll down and look for 'Windows Subsystem for Linux' and click (check) the box.
+
 d. The click 'ok'
+
 e. You will be asked to restart your system (laptop) after the loading process is complete. Go ahead and restart you system.
 
 Step 2: Install WSL Distribution (Ubuntu).
 ---
 
 a. Go to Microsoft Store and search for 'Ubuntu', then click on 'Ubuntu' when it appears. I selected the one without any number in front of it. It's just 'Ubuntu'.
+
 b. Click on it to install.
 
 c. After installation, Ubuntu window will automatically open and prompt you to create a user account. Ensure you have ENOUGH data before you start the installation process. ENOUGH data oooooo. About..................
