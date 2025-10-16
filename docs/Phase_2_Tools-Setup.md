@@ -1,13 +1,15 @@
-##**Phase 1: CONFIGURATION OF TOOLS**
-
+**Phase 1: CONFIGURATION OF TOOLS**
+---
 This phase details the necessary steps taken to configure the development environment.
-
+----------------------------------------------------------------------------------------------
 **1. Setting Up the Linux Environment (WSL)**
-SSince professional OS development relies heavily on Unix-like tools, we use WSL (Windows Subsystem for Linux) to bring a complete Linux environment (Ubuntu) directly onto the Windows laptop. We need Ubuntu (which is a software that acts as another OS in our OS) because it provides the standard toolchain (that is, collection of tools like, GCC, make, etc.) required for cross-compiling the kernel. Developing directly on Windows is unnecessarily complex.
+
+Since professional OS development relies heavily on Unix-like tools, we use WSL (Windows Subsystem for Linux) to bring a complete Linux environment (Ubuntu) directly onto the Windows laptop. We need Ubuntu (which is a software that acts as another OS in our OS) because it provides the standard toolchain (that is, collection of tools like, GCC, make, etc.) required for cross-compiling the kernel. Developing directly on Windows is unnecessarily complex.
 
 WSL allows us to run the high-performance Linux environment without dual-booting or restarting, ensuring a smooth workflow on the host machine.
 
 Step 1: Enable WSL feature on your windows system (laptop)
+---
 a. Press Windows key + R
 b. Type in 'optionalfeatures.exe' and press enter.
 c. Scroll down and look for 'Windows Subsystem for Linux' and click (check) the box.
