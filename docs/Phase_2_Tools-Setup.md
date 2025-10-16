@@ -1,6 +1,6 @@
 **Phase 1: CONFIGURATION OF TOOLS**
 --------------------
-This phase details the necessary steps taken to configure the development environment.
+This phase details the necessary steps taken to configure the development environment.You need about 2 GB of data to for the download process.
 
 **1. Setting Up the Linux Environment (WSL)**
 ----------
@@ -25,9 +25,9 @@ a. Go to Microsoft Store and search for 'Ubuntu', then click on 'Ubuntu' when it
 
 b. Click on it to install.
 
-c. After installation, Ubuntu window will automatically open and prompt you to create a user account. Ensure you have ENOUGH data before you start the installation process. ENOUGH data oooooo. About..................
+c. After installation, Ubuntu window will automatically open and prompt you to create a user account. Ensure you have ENOUGH data before you start the installation process. ENOUGH data oooooo.
 
-d. Enter Username: Choose a simple username (e.g., osdev).
+d. Enter Username: Choose a simple username (e.g., ogaga).
 
 e. Enter Password: Create a password. This password will be needed anytime you use the sudo command (for administrative privileges). Note that when you type the password, there may be no sign or proof that you are typing anything. Just keep typing. Believe that what you are typing is recognized by the system. Press enter when you are done.
 
