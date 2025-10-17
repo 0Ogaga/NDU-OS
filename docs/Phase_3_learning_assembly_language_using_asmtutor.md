@@ -16,6 +16,8 @@ Going through all 36 lessons, mine are written in 64-bit so therefore, the compi
 | --- | --- | --- |
 | Some registers | eax, ebx, ecx, edx | rax, rdi, rsi, rdx |
 | Some instructions | int 80h | syscall |
+| Assemble | nasm -f elf filename.asm | nasm -f elf64 filenme.asm |
+| Link | ld -m elf_i386 filename.o -o filename | ld filename.o -o filename |
 
 Lessson 1
 ---
