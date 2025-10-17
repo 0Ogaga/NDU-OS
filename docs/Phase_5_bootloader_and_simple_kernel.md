@@ -15,7 +15,7 @@ How to run the bootloader.
 ---
 Remember in our [simple bootloader](src/assembly_language_practice/bootSectorPractice.asm) file, We entered various commands in order to run it. We can actually put all those commands in one file (which is called Makefile). And then, simply type 'make run' in our command line so as order to run our programs. This becomes very important when we have differnet languages like assembly and C/C++.
 
-Click [here](Makefile) to access the Makefile.
+Click [here](../Makefile) to access the Makefile.
 
 When you have all three files, you are to simply type;
 
