@@ -1,6 +1,6 @@
 **Phase 3: LEARNING ASSEMBLY LANGUAGE FROM ASMTUTOR**
 
-| ---
+-----
 This phase documents the foundational knowledge acquired using ASMTutor.
 
 Why Learn Assembly for OS Development?
