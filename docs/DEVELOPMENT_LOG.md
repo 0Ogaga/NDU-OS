@@ -16,4 +16,4 @@ This document serves as the master index for all project phases, documenting dec
 | **Phase 6** | **[The physical structure of the machine we are working on](Phase_6_x86_architecture.md)** |
 
 Click on [Challenges_and_how_they_where_resolved](Challenges_and_how_they_where_resolved.md) to see the challenges encountered during the IT project.
----
+
