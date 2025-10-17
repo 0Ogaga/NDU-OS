@@ -11,6 +11,7 @@ Comments are added to the program so as for better understanding so less will be
 How to run the bootloader.
 ---
 Since the bootloader should be in a hard disk or flash drive in another computer, we are using qemu as our virtual computer (machine). We do this by first converting our bootloader (that is the boot sector program) to machine language. Enter this command in your command promt which can be done inside VS Code terminal.
+
     nasm -f bin bootSectorPractice.asm -o boot.bin
 
 '**nasm**' is our does the assembly.
@@ -23,6 +24,7 @@ Since the bootloader should be in a hard disk or flash drive in another computer
 
 
 This next command is to launch our bootloader in qemu.
+
     qemu-system-i386 -drive format=raw,file=boot.bin
 
 '**qemu-system-i386**' starts the QEMU emulator for a 32-bit Intel processor (it simulates a real computer).
