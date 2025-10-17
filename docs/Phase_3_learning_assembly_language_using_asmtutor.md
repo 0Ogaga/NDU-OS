@@ -1,5 +1,5 @@
 **Phase 3: LEARNING ASSEMBLY LANGUAGE FROM ASMTUTOR**
-|---
+| ---
 This phase documents the foundational knowledge acquired using ASMTutor.
 
 Why Learn Assembly for OS Development?
@@ -19,4 +19,5 @@ Going through all 36 lessons, mine are written in 64-bit so therefore, the compi
 Lessson 1
 ---
 Click [here](https://asmtutor.com/#lesson1) for Asmtutor's lesson with code and explanation (in 32-bits).
-Click [here](lesson1.asm) for mine with code and explanation in the form of comments (in 64-bits).
+
+Click [here](src/assembly_language_practice/lesson1.asm) for mine with code and explanation in the form of comments (in 64-bits).
