@@ -19,6 +19,8 @@ Going through all 36 lessons, mine are written in 64-bit so therefore, the compi
 | Assemble | nasm -f elf filename.asm | nasm -f elf64 filenme.asm |
 | Linker | ld -m elf_i386 filename.o -o filename | ld filename.o -o filename |
 
+**Both commands to assemble and linker command should be typed (entered) in your wsl (ubuntu) environment. After you enter the assemble command, press enter. If there is no error, then enter the linker command and press enter. If there is no error, then enter the run command './filename' and press enter. Then you should see your output.**
+
 Lessson 1
 ---
 Click [here](https://asmtutor.com/#lesson1) for Asmtutor's lesson with code and explanation (in 32-bits).
