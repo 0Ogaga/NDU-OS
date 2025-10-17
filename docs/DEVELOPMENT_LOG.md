@@ -10,7 +10,7 @@ This document serves as the master index for all project phases, documenting dec
 | :--- | :--- | :--- | :--- |
 | **Phase 1** | Complete | Overview (Reserch of key concepts & tools) | **[View Log](Phase-1-overview.md)** |
 | **Phase 2** | Complete | Configuration of tools | **[View Log](Phase_2_Tools-Setup.md)** |
-| **Phase 3** | Complete | Assembly language practice form ASMTUTOR | **[View Log] (Phase_3_learning_assembly_language_using_asmtutor.md)** |
+| **Phase 3** | Complete | Assembly language practice form ASMTUTOR | **[View Log](Phase_3_learning_assembly_language_using_asmtutor.md)** |
 
 
 ---
