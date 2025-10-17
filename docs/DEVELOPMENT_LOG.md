@@ -13,7 +13,7 @@ This document serves as the master index for all project phases, documenting dec
 | **Phase 3** | Assembly language practice form ASMTUTOR | **[View Log](Phase_3_learning_assembly_language_using_asmtutor.md)** |
 | **Phase 4** | Introduction to bootloader | **[View Log](Phase_4_Simple_bootloader.md)** |
 | **Phase 5** | Bootloader and simple kernel | **[View Log](Phase_5_bootloader_and_simple_kernel.md)** |
-| **Phase 6** | The physical structure of the machine we are working on | **[View Log](Phase_6_x86_architecture)** |
+| **Phase 6** | The physical structure of the machine we are working on | **[View Log](Phase_6_x86_architecture.md)** |
 
 ---
 
