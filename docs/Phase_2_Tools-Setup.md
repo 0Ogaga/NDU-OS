@@ -127,7 +127,7 @@ A stable, generic CPU model for early OS dev
 
 Instruct BIOS to boot from the floppy drive
 
-        boot: floopy
+        boot: floppy
 
 Floppy Disk Drive (Our Kernel Image)
 
@@ -143,8 +143,6 @@ Logging
         info: action=ignore
         
         display_library: win32
-        
-        cpu: model=pentium, count=1
         
         keyboard_send_eoi: enabled=1
 
