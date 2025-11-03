@@ -1,50 +1,52 @@
-
-	
-# FILE: Makefile
-# DESCRIPTION: Manages the compilation and creation of the combined kernel image.
+# THIS IS THE ONE FOR SIMPLE KERNEL
 # =========================================================================
+# File: Makefile (Simple Kernel - Bochs / QEMU Compatible)
+# =========================================================================
+# This Makefile assembles the bootloader and kernel, creates a floppy image,
+# and runs it in Bochs or QEMU.
+# -------------------------------------------------------------------------
 
-# --- Configuration ---
+# --- 1. Configuration Variables ---
 ASM = nasm
+DD = dd
 
-# CRITICAL: Path to your Windows QEMU executable (in WSL format)
-# If your path is different, update this line.
-QEMU = /mnt/c/Program\ Files/qemu/qemu-system-x86_64.exe
+# Adjust this path if using Bochs on Windows (via WSL)
+BOCHS = /mnt/c/Program\ Files/Bochs-2.7/bochs.exe
 
-BOOTSTRAP_FILE = bootstrap2.asm
-KERNEL_FILE = simple_kernel2.asm
-KERNEL_IMAGE = kernel.img
+# File Definitions
+BOOTSTRAP_FILE = bootstrap.asm
+KERNEL_ASM_FILE = simple_kernel2.asm
+BOOTSTRAP_BIN = bootstrap.bin
+KERNEL_BIN = kernel.bin
+DISK_IMAGE = kernel.img
 
-# --- Targets ---
+# --- 2. Build Process (Compilation & Disk Image Creation) ---
+build: $(BOOTSTRAP_FILE) $(KERNEL_ASM_FILE)
+	# Assemble bootloader (512 bytes)
+	$(ASM) -f bin $(BOOTSTRAP_FILE) -o $(BOOTSTRAP_BIN)
+	
+	# Assemble kernel
+	$(ASM) -f bin $(KERNEL_ASM_FILE) -o $(KERNEL_BIN)
+	
+	# Create new disk image (floppy 1.44MB)
+	$(DD) if=/dev/zero of=$(DISK_IMAGE) bs=512 count=2880
+	
+	# Write bootloader to sector 0
+	$(DD) if=$(BOOTSTRAP_BIN) of=$(DISK_IMAGE) bs=512 count=1 conv=notrunc
+	
+	# Write kernel to sector 2 (start from sector 2)
+	$(DD) if=$(KERNEL_BIN) of=$(DISK_IMAGE) bs=512 seek=1 conv=notrunc
+
+# --- 3. Run Target (Bochs or QEMU) ---
+run: build
+	$(BOCHS) -f bochsrc.txt -q
+# or you can use QEMU instead:
+#	qemu-system-i386 -drive format=raw,file=$(DISK_IMAGE)
+
+# --- 4. Clean Target ---
+clean:
+	rm -f $(BOOTSTRAP_BIN) $(KERNEL_BIN) $(DISK_IMAGE)
 
 .PHONY: all build run clean
-
-# Default target
 all: run
 
-# Combine the bootloader and kernel into a single disk image.
-build: $(BOOTSTRAP_FILE) $(KERNEL_FILE)
-	# 1. Compile the bootloader (creates bootstrap.o)
-	$(ASM) -f bin $(BOOTSTRAP_FILE) -o bootstrap.o
-	
-	# 2. Compile the simple kernel (creates kernel.o)
-	$(ASM) -f bin $(KERNEL_FILE) -o kernel.o
-	
-	# 3. Create the final image: Write the bootloader (512 bytes) to the 1st sector.
-	# The line below uses a TAB for indentation.
-	dd if=bootstrap.o of=$(KERNEL_IMAGE)
-	
-	# 4. Append the kernel: Write the kernel to the 2nd sector (seek=1) and sync blocks.
-	# The line below uses a TAB for indentation.
-	dd seek=1 conv=sync if=kernel.o of=$(KERNEL_IMAGE) bs=512
-
-# Run the final image in the emulator.
-run: build
-	# -fda: Boots the image as a virtual floppy disk.
-	# The line below MUST start with a TAB character.
-	$(QEMU) -fda $(KERNEL_IMAGE)
-
-# Clean target: Removes generated files.
-clean:
-	# The line below uses a TAB for indentation.
-	rm -f bootstrap.o kernel.o $(KERNEL_IMAGE)
