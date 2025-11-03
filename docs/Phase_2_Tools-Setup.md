@@ -150,4 +150,4 @@ Logging
 
         
         
-Use the shorcut shown in the command environment to exit.
+Use the shorcut shown in the command environment to save and exit.
