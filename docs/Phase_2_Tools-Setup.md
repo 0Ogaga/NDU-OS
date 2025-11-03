@@ -99,3 +99,31 @@ viii. Makefile Tools (the one bearing Microsoft).
 ix. NASM X86 Assembly Language.
 
 x. Nasm x86_64 syntax highlighting.
+
+
+**7. Visual Sudio Code (VS Code)**
+Adding Bochs to the list of development tools is necessary because, as your experience showed, it was the only emulator that correctly handled the 16-bit BIOS INT 13h disk-read routine required by your bootloader, unlike QEMU.
+
+Bochs is a highly accurate System Emulator known for its precise simulation of the x86 architecture. It is essential for older OS development tasks, that rely on complex BIOS services for disk reading, where QEMU often fails.
+
+Bochs Success: Bochs accurately emulates the older BIOS environment, allowing the INT 13h calls and the sequential memory loading logic (add bx,512) to execute without error.
+
+**Setting up Bochs Emulator**
+
+**a. Installation:** Go to the official Bochs website or search for a direct download link (e.g., from SourceForge).Download the Windows installer (e.g., Bochs-2.7-win64.exe). Run the installer and complete the process. Make a note of the installation path, as you'll need it for the Makefile (e.g., /mnt/c/Program\ Files/Bochs-2.7/bochs.exe).b. Configuration: The bochsrc.txt FileBochs requires a configuration file named bochsrc.txt to tell it what kind of machine to emulate, how much RAM to use, and where to find your operating system disk image. Create a file named bochsrc.txt in your project's root directory and add the following content:
+
+        config_interface: textconfig
+
+        megs: 32
+        
+        boot: disk
+        
+        floppya: 1_44=kernel.img, status=inserted
+        
+        log: bochsout.txt
+        
+        display_library: win32
+        
+        cpu: model=pentium, count=1
+        
+        keyboard_send_eoi: enabled=1
