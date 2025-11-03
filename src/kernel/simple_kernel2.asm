@@ -1,3 +1,49 @@
+; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ; SIMPLE KERNEL
 
 start:
@@ -20,4 +66,4 @@ print_char:
 done:
     ret
 
-hello_string db     'Hello World!, From Simple Assembly 539kernel!', 0
+hello_string db     'Correct 100%', 0xa, 'All good. It is working now from Simple Assembly 539kernel!', 0
