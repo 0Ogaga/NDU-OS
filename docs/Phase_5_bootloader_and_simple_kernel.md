@@ -22,3 +22,15 @@ When you have all three files, you are to simply type;
     make run
 
 **This should be typed (entered) in your wsl (ubuntu) environment** 
+
+
+
+
+----------
+With what we have done so far, we have a working operating system, which can only be loaded into Ram for operation, but the only thing it can do now, is to display one predefined message. 
+
+It can't manage processes, resources, file system and it has no driver. It is not also protected since it is still in 16-bit real mode. This present OS we have can be classified as a single-user single task Operating System known as NDU OS.
+
+Obviously, we need to make our OS protected (32-bit mode) and add the features highlighted above.
+
+To make this happen, we need to write more programs and include only their names inside the kernel program (that's calling the other programs inside the kernel program).<img width="735" height="297" alt="image" src="https://github.com/user-attachments/assets/b572132f-9b2e-4ece-8a87-32887174151e" />
