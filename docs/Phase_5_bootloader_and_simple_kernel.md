@@ -28,7 +28,7 @@ When you have all three files, you are to simply type;
 
 After Successfully Running our Simple Operating System in Bochs...
 ----------
-With what we have done so far, we have a working operating system, which can only be loaded into Ram for operation, but the only thing it can do now, is to display one predefined message. 
+With what we have done so far, we have a working operating system, which can only be loaded into RAM for operation, but the only thing it can do now, is to display one predefined message. 
 
 It can't manage processes, resources, file system and it has no driver. It is not also protected since it is still in 16-bit real mode. This present OS we have can be classified as a single-user single task Operating System known as NDU OS.
 
