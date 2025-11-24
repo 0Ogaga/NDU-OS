@@ -6,7 +6,7 @@ This phase upgrades the simple bootloader to its real task: loading the OS kerne
 
 Click [here](../src/Simple%20OS%20practice/bootloader.asm) to access the updated bootloader.
 
-Click [here](../src/Simple%20OS%20practice/simple_kernel.asm) to access the simplified kernel.
+Click [here](../src/Simple%20OS%20practice/simple_Kernel.asm) to access the simplified kernel.
 
 
 Comments are added to the program so as for better understanding so less will be discussed here.
