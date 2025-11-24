@@ -111,7 +111,7 @@ Bochs Success: Bochs accurately emulates the older BIOS environment, allowing th
 
 **Setting up Bochs Emulator**
 
-**a. Installation:** Go to the official Bochs website or search for a direct download link (e.g., from SourceForge).Download the Windows installer (e.g., Bochs-2.7-win64.exe). Run the installer and complete the process. Make a note of the installation path, as you'll need it for the Makefile (e.g., /mnt/c/Program\ Files/Bochs-2.7/bochs.exe).b. Configuration: The bochsrc.txt FileBochs requires a configuration file named bochsrc.txt to tell it what kind of machine to emulate, how much RAM to use, and where to find your operating system disk image. Create a file named bochsrc.txt in your project's root directory and add the following content.
+**a. Installation:** Go to the official Bochs website or search for a direct download link (e.g., from SourceForge).Download the Windows installer (e.g., Bochs-2.7-win64.exe). Run the installer and complete the process. Make a note of the installation path, as you'll need it for the Makefile (e.g., /mnt/c/Program\ Files/Bochs-2.7/bochs.exe).b. Configuration: The bochsrc.txt FileBochs requires a configuration file named bochsrc.txt to tell it what kind of machine to emulate, how much RAM to use, and where to find your operating system disk image. Create a file named bochsrc.txt in your project's root directory and add the following as its content.
 
         config_interface: textconfig
         megs: 32
