@@ -1,5 +1,5 @@
 ; ===============================================================
-; BOOTLOADER - bootstrap2.asm
+; BOOTLOADER - bootstrap2.asm (fixed)
 ; ===============================================================
 
 [org 0x7C00]
@@ -69,7 +69,7 @@ print_string:
 ; ===============================================================
 ; Strings
 ; ===============================================================
-title_string        db 'The bootloader is loaded successfully.', 0, 0xa
+title_string        db 'Yes! The bootloader is loaded successfully.', 0, 0xa
 load_error_string   db 'The kernel cannot be loaded', 0
 
 ; ===============================================================
@@ -77,5 +77,3 @@ load_error_string   db 'The kernel cannot be loaded', 0
 ; ===============================================================
 times 510 - ($ - $$) db 0
 dw 0xAA55
-
-
