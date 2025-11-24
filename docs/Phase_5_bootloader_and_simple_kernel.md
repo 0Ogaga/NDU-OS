@@ -4,7 +4,7 @@
 This phase upgrades the simple bootloader to its real task: loading the OS kernel from disk into memory and transferring control to it. This requires a new file (kernel.asm). In this case, we are going to write a very simple kernel which only displays a message.
 
 
-Click [here](../src/Simple OS practice/bootloader.asm) to access the updated bootloader.
+Click [here](../src/Simple%20OS%20practice/bootloader.asm) to access the updated bootloader.
 
 Click [here](../src/Simple OS practice/simple_kernel.asm) to access the simplified kernel.
 
