@@ -111,41 +111,14 @@ Bochs Success: Bochs accurately emulates the older BIOS environment, allowing th
 
 **Setting up Bochs Emulator**
 
-**a. Installation:** Go to the official Bochs website or search for a direct download link (e.g., from SourceForge).Download the Windows installer (e.g., Bochs-2.7-win64.exe). Run the installer and complete the process. Make a note of the installation path, as you'll need it for the Makefile (e.g., /mnt/c/Program\ Files/Bochs-2.7/bochs.exe).b. Configuration: The bochsrc.txt FileBochs requires a configuration file named bochsrc.txt to tell it what kind of machine to emulate, how much RAM to use, and where to find your operating system disk image. Create a file named bochsrc.txt in your project's root directory and add the following content (in Ubuntu environment):
-
-Global Settings
+**a. Installation:** Go to the official Bochs website or search for a direct download link (e.g., from SourceForge).Download the Windows installer (e.g., Bochs-2.7-win64.exe). Run the installer and complete the process. Make a note of the installation path, as you'll need it for the Makefile (e.g., /mnt/c/Program\ Files/Bochs-2.7/bochs.exe).b. Configuration: The bochsrc.txt FileBochs requires a configuration file named bochsrc.txt to tell it what kind of machine to emulate, how much RAM to use, and where to find your operating system disk image. Create a file named bochsrc.txt in your project's root directory and add the following content.
 
         config_interface: textconfig
-
-Standard for running Bochs on Windows
-
         megs: 32
-
-A stable, generic CPU model for early OS dev
-
         cpu: model=bx_generic
-
-Instruct BIOS to boot from the floppy drive
-
         boot: floppy
-
-Floppy Disk Drive (Our Kernel Image)
-
         floppya: 1_44=kernel.img, status=inserted
-
-Logging
-        log: bochsout.txt
-
         error: action=report
-
         panic: action=ask
-
         info: action=ignore
-        
         display_library: win32
-        
-        keyboard_send_eoi: enabled=1
-
-        
-        
-Use the shorcut shown in the command environment to save and exit.
