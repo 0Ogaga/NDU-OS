@@ -15,4 +15,4 @@ Building a minimal Operating System kernel from scratch as part of my Industrial
 
 
 **_Full Documentation_**
-*For a detailed log of challenges, solutions, and lessons learned during the setup and assembly phase, see the **[Development Log](docs/DEVELOPMENT_LOG.md)**.*
+*For a detailed log, see the **[Development Log](docs/DEVELOPMENT_LOG.md)**.*
