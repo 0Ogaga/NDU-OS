@@ -8,7 +8,7 @@ The first step was to understand the fundamental components we planned to build:
 
 **Operating System (OS)Concept:** An OS is the primary piece of software that manages all the computer's hardware and software resources. It acts as an intermediary between the user/applications and the physical hardware. We focused on the Kernel, which is the core of the OS. The kernel handles critical tasks like memory management, process scheduling, and interacting with hardware drivers. Our project's goal is to build this kernel.
 
-**BootloaderConcept:** This is the first piece of code executed when a computer powers on. It is incredibly small (often exactly 512 bytes) and runs in the CPU's initial, limited 16-bit Real Mode.Key Function: The bootloader's sole job is to initialize the system, load the main OS kernel into memory, and transfer control to it. It is the bridge between the computer's BIOS (firmware) and our kernel.
+**Bootloader Concept:** This is the first piece of code executed when a computer powers on. It is incredibly small (often exactly 512 bytes) and runs in the CPU's initial, limited 16-bit Real Mode.Key Function: The bootloader's sole job is to initialize the system, load the main OS kernel into memory, and transfer control to it. It is the bridge between the computer's BIOS (firmware) and our kernel.
 
 **2. Tools and Materials Identification (The "How")**
 
