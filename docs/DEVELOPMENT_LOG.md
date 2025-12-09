@@ -1,6 +1,6 @@
 # NDU-OS: Comprehensive Development Log
 
-This document serves as the master index for all project phases, documenting decisions, challenges, and lessons learned chronologically. **Click on any phase title (technical focus) below to view the detailed log.**
+This document serves as the master index for all project phases, documenting decisions, challenges, and lessons learned chronologically. **Click on any phase title (technical focus) below to view the detailed log.** Please note that, the steps and ideas documented are as a result of overcoming different challenges (although not explicitly mentioned).
 
 ---
 
@@ -13,5 +13,3 @@ This document serves as the master index for all project phases, documenting dec
 | **Phase 3** | **[Assembly language practice from ASMTUTOR](Phase_3_learning_assembly_language_using_asmtutor.md)** |
 | **Phase 4** | **[Introduction to bootloader](Phase_4_Simple_bootloader.md)** |
 | **Phase 5** | **[Bootloader and simple kernel](Phase_5_bootloader_and_simple_kernel.md)** |
-
-Clinck [here](Challenges_And_Solutions.md) to see challenges and solutions.
