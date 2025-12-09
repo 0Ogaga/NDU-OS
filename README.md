@@ -1,4 +1,4 @@
-**NDU-OS: INDUSTRIAL TRAINING PROJECT**
+**INDUSTRIAL TRAINING RESEARCH**
 
 This a log of my industrial training, detailing the process of Operating System kernel research with a trial on a simple kernel to be loaded from a floppy disk. It involves learning how a computer starts, how it manages memory, and how to write core code that runs before any major system like Windows or Linux has loaded.
 
