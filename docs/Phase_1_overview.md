@@ -19,5 +19,6 @@ Based on the goal of building a bare-metal kernel, the following required materi
 3. C/C++ extensions in VS Code: In writing of C/C++ programs.
 4. Assembly language extensions in VS Code: For writing of assembly programs
 5. QEMU: It is a simulator which acts like another machine (computer) inside your (our) machine (computer).
-6. Ubuntu: This acts as another operating system inside your computer. You have to enable Windows Subsystem for Linux if you are using windows. NOTE THAT FOR THIS PROJECT, I AM WORKING WITH A WINDOWS LAPTOP.
-7. MingW64: MinGW-w64 creates a raw, self-sufficient program that can run by itself on the empty computer hardware.
+6. BOCHS: Also a simulator which can handle more complex BIOS service compared to QEMU.
+7. Ubuntu: This acts as another operating system inside your computer. You have to enable Windows Subsystem for Linux if you are using windows. NOTE THAT FOR THIS PROJECT, I AM WORKING WITH A WINDOWS LAPTOP.
+8. MingW64: MinGW-w64 creates a raw, self-sufficient program that can run by itself on the empty computer hardware.
